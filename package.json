@@ -1,0 +1,28 @@
+{
+  "name": "devbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "start:node": "nodemon server",
+    "start:react": "npm start --prefix client",
+    "start:dev": "concurrently \"npm run start:node\" \"npm run start:react"
+  },
+  "author": "Harsh Kumar Singh (@itsharsh)",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.1",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12",
+    "requests": "^0.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
+  }
+}
